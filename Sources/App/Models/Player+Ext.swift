@@ -22,3 +22,8 @@ extension Player: Parameter { }
 /// Allows `Player` to be encoded to and decoded from HTTP messages.
 extension Player: Content { }
 
+extension Player.Team: ReflectionDecodable {
+    public static func reflectDecoded() throws -> (Player.Team, Player.Team) {
+        return (.mario, .bowser)
+    }
+}
