@@ -28,4 +28,9 @@ public func routes(_ router: Router) throws {
             return player
         }
     }
+    
+    router.get("schedule") { req in
+        
+        req.redirect(to: "webcal://p53-caldav.icloud.com/published/2/MTMzMjM5MDMyNTEzMzIzOc8GB8_3gePltiYPXmUh--1J7voBInh196IcAbuTb6BpTHgidUB7NZhbEuD1plYEXbWj2QjnwrLXfHbjzkzOj9I", type: .permanent)
+    }
 }
