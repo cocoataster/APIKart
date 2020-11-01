@@ -14,7 +14,7 @@ let package = Package(
         .package(url: "https://github.com/vapor/fluent-sqlite.git", from: "3.0.0"),
         
         // Player Model
-        .package(url: "https://github.com/esansalv/Player.git", from: "0.1.0")
+        .package(url: "https://github.com/cocoataster/Player.git", from: "0.1.0")
     ],
     targets: [
         .target(name: "App", dependencies: ["FluentSQLite", "Vapor", "Player"]),
